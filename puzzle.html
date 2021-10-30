@@ -6,5 +6,17 @@
 
   <body onload="main()">
     <canvas id="myCanvas"></canvas>
+    <div id="menuItems">
+      <div id="controls">
+        Difficulty
+        <select id="difficulty" onchange="setDifficulty()">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="insane">Insane</option>
+        </select>
+        <button onclick="restart()">Start</button>
+      </div>
+    </div>
   </body>
 </head>

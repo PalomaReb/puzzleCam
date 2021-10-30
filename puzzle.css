@@ -1,4 +1,10 @@
 body {
   margin: 0;
   overflow: 0;
+  overscroll-behavior: none;
+}
+
+#menuItems {
+  position: absolute;
+  top: 0;
 }
