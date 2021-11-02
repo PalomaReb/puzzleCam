@@ -56,6 +56,7 @@ function restart() {
     START_TIME = new Date().getTime();
     END_TIME = null;
     randomizePieces();
+    document.getElementById("menuItems").style.display = "none";
 }
 
 function updateTime() {
@@ -80,8 +81,8 @@ function isComplete() {
 function formatTime(milliseconds) {
     let seconds = Math.floor(milliseconds / 1000);
     let s = Math.floor(seconds % 60);
-    let m = Math.floor(seconds % (60 * 60)) / 60;
-    let h = Math.floor((seconds % (60 * 60 * 24)) / (60 * 60))
+    let m = Math.floor((seconds % (60 * 60)) / 60);
+    let h = Math.floor((seconds % (60 * 60 * 24)) / (60 * 60));
 
     let formattedTime = h.toString().padStart(2, '0');
     formattedTime += ":";
